@@ -1,0 +1,50 @@
+<html>
+
+    <head>
+        <title>Robonomics AI</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <body id="capture">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#4b4963;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img class="logo" src="/static/images/top-header.svg"></a>
+              </div>
+            </div>
+        </nav>
+
+        <div class="openBot" style="display: none">
+          <iframe src="https://webchat.botframework.com/embed/teacherhelpbot-bot?s=U3KTwbIWN-I.MEIcA9UiOdRKdmTCieDXte1ks9H6B5OGVVGQHTtPrqA" frameborder="0" style="width: 35%; height: 70%; right:0; bottom:0; z-index: 999; position: absolute;"></iframe>
+        </div>
+
+        <img src="/static/images/bot.png" onclick="openBot()" class="botImg">
+        <!-- <form action="/uploadId" method="POST" enctype="multipart/form-data"> -->
+          <div class="card">
+            <h3 class="heading4" style="margin:0 !important;">Scan Student Id</h3>
+            <div>
+              <p>You are required to upload your School ID Card here.</p>
+              <div style="height: 16em; width: 25em;">
+                <input type="file" name="file" id="profile-img">
+                <img id="profile-img-tag" class="showOutput"/>
+                <!-- <div class="custom-file mb-3">
+                  <input type="file" class="custom-file-input" id="customFile" name="file" accept=".jpg, .jpeg, .png">
+                  <p id="status"></p>
+                  <div>
+                    <img id="output" class="showOutput">
+                  </div>
+                </div> -->
+                <!-- <input type="submit" value="Save" class="btn btn-info" style="margin-left: 5em; width: 54%; margin-top: 12px;" onclick="location.href='./voiceRecord.html'"> -->
+              </div>
+            </div>
+          <!-- </form> -->
+          <button  class="btn btn-info" style="width: 54%;" onclick="location.href='./voiceRecord.html'"> Save </button>
+        </body>
+        
+    <script src="../js/main.js"></script>
+    <script src="../js/importBlob.js"></script>
+</html>

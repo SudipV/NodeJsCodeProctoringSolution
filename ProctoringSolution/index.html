@@ -1,0 +1,91 @@
+<html>
+
+    <head>
+        <title>Robonomics AI</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <meta name="google-signin-client_id" content="517646416771-1vst7i1a80q2nu3f01ktmmu1ln8c32s8.apps.googleusercontent.com">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="/static/js/html2canvas.js"></script>
+        <script src="/static/js/easytimer.min.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#4b4963;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img class="logo" src="/static/images/top-header.svg"></a>
+              </div>
+              <div class="buttons">
+                <button type="button" onclick="signOut()" class="btn-link signout">Sign Out</button>
+              </div>
+            </div>
+          </nav>
+        
+        <div class="container-fluid">
+          <div id="background">
+
+            <h3 class="welcome">Welcome</h3>
+            <!-- <div class="openBot" style="display: none">
+              <iframe src='https://webchat.botframework.com/embed/teacherhelpbot-bot?s=U3KTwbIWN-I.MEIcA9UiOdRKdmTCieDXte1ks9H6B5OGVVGQHTtPrqA' frameborder="0" style="width: 35%; height: 70%; right:0; bottom:0; z-index: 999; position: absolute;"></iframe>
+            </div> -->
+            <div class="heading">
+              <p>Hi there! We are building an Artificial Intelligence buddy for you</p>
+              <p>which will be able to recognise you by your voice and face</p>
+              <p>just as we humans do.</p>
+            
+            </div>
+          </div>
+            <div class="heading">
+              <p style="margin-top: 12px">We will take you through a few simple steps to capture your face, voice</p>
+              <p>and ID cards. We will also capture your GPS location.</p>
+              <p>We recommend that you use a well-lit, quiet room for this.</p>
+            </div>
+            <!--change the button here as and what required-->
+            <div style="cursor: pointer; position: absolute; left: 39%;" onclick="getLocation()">
+              <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+              <img src="/static/images/Buttonsmall.png" onclick="location.href='/static/html/register.html'">  
+          </div>
+        </div>
+
+        <div class="g-form">
+          <iframe id="google_form" src="" width="640" height="1449" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+       </div>
+
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <iframe id="google_form" src="https://docs.google.com/forms/d/e/1FAIpQLSegMGw6Lcsz_h6R5jfinj3hktJw3iXB63cyQI1fVWl0SlKdng/viewform" width="640" height="1449" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+    <!-- <img src="/static/images/bot.png" onclick="openBot()" class="botImg"> -->
+    </body>
+
+    <script src="/static/js/importBlob.js"></script>
+    <script src="/static/js/screenCapture.js"></script>
+    <script src="/static/js/videoCapture.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</html>

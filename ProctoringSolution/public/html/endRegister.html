@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+        <title>Robonomics AI</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <body id="capture">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#4b4963;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img class="logo" src="/static/images/top-header.svg"></a>
+          </div>
+        </div>
+    </nav>
+
+    <div>
+      <form action="/storeinblob" method="POST" enctype="multipart/form-data">
+        <div class="card">
+          <h3 class="heading4" style="margin:0 !important;">Take Video</h3>
+            <div style="width: 82%;">
+                <p>Slowly Move your head up and down(as when nodding "Yes"), then turn your head
+                  from right to left(as when indicating "No").</p>
+                <video id="vid1" style="height: 254px;" controls></video>
+                <video id="vid2" style="height: 254px;" controls></video>
+            </div>
+            <!-- <button type="button" class="btn btn-info recordBut" id="btnStart">Start recording</button> -->
+            <!-- <button type="button" class="btn btn-info recordBut" id="btnStop">Stop recording</button> -->
+            <button type="button" class="btn btn-info recordBut" id="nextButton" style="width: 52%" onclick="location.href='./thankyou.html'">End Registeration</button>
+            <img src="/static/images/Video.png" class="recordingIcon" id="btnStart">
+            <img src="/static/images/Video.png" class="recordingIcon" id="btnStop">
+
+        </div>
+      </form>
+    </div>
+
+    <div class="openBot" style="display: none">
+      <iframe src="https://webchat.botframework.com/embed/teacherhelpbot-bot?s=U3KTwbIWN-I.MEIcA9UiOdRKdmTCieDXte1ks9H6B5OGVVGQHTtPrqA" frameborder="0" style="width: 35%; height: 70%; right:0; bottom:0; z-index: 999; position: absolute;"></iframe>
+    </div>
+    <img src="/static/images/bot.png" onclick="openBot()" class="botImg">
+
+  </body>
+  
+  <script src="../js/main.js"></script>
+<script src="../js/importBlob.js"></script>
+<script type="text/javascript" src="../js/videoinput.js"></script>
+
+</html>

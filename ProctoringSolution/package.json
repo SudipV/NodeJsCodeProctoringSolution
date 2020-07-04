@@ -1,0 +1,33 @@
+{
+  "name": "rai-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 Edge version",
+    "last 1 Chrome version",
+    "last 1 Firefox version"
+  ],
+  "dependencies": {
+    "@azure/storage-blob": "^12.1.2",
+    "atob": "^2.1.2",
+    "azure-storage": "^2.10.3",
+    "body-parser": "^1.19.0",
+    "browserify": "^16.5.1",
+    "cookie": "^0.4.1",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.17",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.1.0",
+    "mysql": "^2.18.1",
+    "nedb": "^1.8.0"
+  }
+}

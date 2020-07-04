@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Robonomics AI</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <body id="capture">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#4b4963;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img class="logo" src="/static/images/top-header.svg"></a>
+              </div>
+            </div>
+          </nav>
+        <div class="card">
+            <h3 class="heading4" style="margin:0 !important;">Record your voice</h3>
+            <div>
+                <p>Two More to go ....</p>
+                <p>Please tap on the icon and speak</p>
+                <p>"Apple juice tastes strange after toothpaste."</p>
+                <!-- <button id="record">Record</button> -->
+                <!-- <button id="stop" disabled>Stop</button> -->
+                <!-- <button id="play" disabled>Play</button> -->
+                 <div style="height: 187px;">
+                   <!-- <img src="../images/voiceicon.png" id="beforerecording" class="recordingIcon"> -->
+                   <p class="ifRecording"> 2 </p>
+                   <!-- <p id="saved" class="afterRecording">We are almost done, Lets take a selfie of you. Click to proceed.</p> -->
+                 </div>
+        </div>
+            <button type="button" class="btn btn-info" style="width:52%;" id="nextButton" onclick="location.href='./recordVoice3.html'">Record Last one</button>
+            <button type="button" class="btn btn-info" style="width:52%;" name="audio2" id="stop" disabled>Stop recording</button>
+            <!-- <button type="button" class="btn btn-info" style="margin-left: 12em;margin-top: 2em;" id="record">Start Recording</button> -->
+            <img src="../images/voiceicon.png" class="recordingIcon" id="record">
+        </div>
+
+        <div class="openBot" style="display: none">
+          <iframe src="https://webchat.botframework.com/embed/teacherhelpbot-bot?s=U3KTwbIWN-I.MEIcA9UiOdRKdmTCieDXte1ks9H6B5OGVVGQHTtPrqA" frameborder="0" style="width: 35%; height: 70%; right:0; bottom:0; z-index: 999; position: absolute;"></iframe>
+        </div>
+        <img src="/static/images/bot.png" onclick="openBot()" class="botImg">
+
+  </body>
+
+<script src="../js/audiorecord.js"></script>
+<script src="../js/importBlob.js"></script>
+<!-- <script src="../js/main.js"></script> -->
+
+</html>

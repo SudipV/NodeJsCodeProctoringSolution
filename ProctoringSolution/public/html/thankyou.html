@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Robonomics AI</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <body id="capture">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:#4b4963;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img class="logo" src="/static/images/top-header.svg"></a>
+              </div>
+            </div>
+        </nav>
+
+      <div>
+        <div class="thankyouScreen">
+            <div>
+              <h2 style="color:#5cb2f4;">Thank You</h2>
+               <p>Thankyou for your details.</p>
+               <p> We are so excited to have you registered. </p>
+            </div>
+            <button type="button" onclick="window.location.href='/'" class="btn btn-success">Please comeback when your exam is scheduled.</button>
+        </div>
+    </div>
+
+    <div class="openBot" style="display: none">
+      <iframe src="https://webchat.botframework.com/embed/teacherhelpbot-bot?s=U3KTwbIWN-I.MEIcA9UiOdRKdmTCieDXte1ks9H6B5OGVVGQHTtPrqA" frameborder="0" style="width: 35%; height: 70%; right:0; bottom:0; z-index: 999; position: absolute;"></iframe>
+    </div>
+    <img src="/static/images/bot.png" onclick="openBot()" class="botImg">
+
+  </body>
+  
+  <script src="/static/js/main.js"></script>
+</html>

@@ -1,0 +1,221 @@
+.g-form{
+    display: none;
+}
+.signout{
+    display: none;
+}
+/* .logo{
+    height: 30px;
+    margin-top: -7px;
+} */
+.g-signin2{
+    margin-right: 6em;
+    margin-left: 3em;
+    cursor: pointer;
+}
+#recordinggif{
+    display: none;
+}
+.cardImage{
+    left: 28%;
+    width: 31em;
+}
+.card{
+ position: absolute;
+ top: 15%;
+ left: 28%;
+ width: 24em;
+ /* padding-bottom: 20px; */
+ color: white;
+}
+#saved{
+    display: none;
+}
+
+.botImg{
+    position: fixed;
+    bottom: 42px;
+    cursor: pointer;
+    right: 12px;
+    z-index: 1999;
+}
+
+#stop{
+    display: none;
+}
+
+#nextButton{
+    display: none;
+}
+
+.form-control{
+    width: 93% !important;
+}
+
+.card > img{
+    height: 48px;
+    margin: 9px 10em;
+}
+/* .openBot{
+    display: none;
+} */
+.g-form{
+    display: none;
+    margin-top: 6%;
+    margin-left: 21%;
+}
+.buttons{
+    display: flex;
+    float: right;
+    margin-top: 7px;
+}
+.btn{
+    background-image: linear-gradient(to right, #1392f4 14%, #4d56c7 83%);
+    color: white;
+}
+
+body{
+    background-color: #161331;
+    font-size: 20px;
+    font-family: Eurostile;
+  }
+  
+  #background{
+      background-image: url("../images/background1.png") !important;
+      background-repeat: no-repeat !important;
+      background-attachment: fixed !important; 
+      background-size: 100% 100% !important;
+      height: 38%;
+  }
+  
+  .recordingIcon{
+    /* margin-top: 3em!important;  */
+    margin-left: 8em !important;
+    cursor: pointer;
+  }
+  
+  .welcome{
+    /* font-weight: bold;  */
+    /* margin-left: 6em; 
+    margin-bottom: 2em;  */
+    margin-top: 4%;
+    color: #1392f4;
+    font-family: Eurostile;
+    font-size: 35px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .heading4{
+    color: #5cb2f4;
+    margin-left: 1em;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+  }
+  .thankyouScreen{
+    top: 26%;
+    position: absolute;
+    left: 39%;
+    width: 24em;
+    /* padding-bottom: 20px; */
+    color: white;
+  }
+  .ifRecording{
+    width: 91%; 
+    margin-top: 4em; 
+    margin-left: 8.5em; 
+    position: fixed;
+  }
+  
+  .heading{
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 2em;
+  }
+  .container-fluid{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .logo{
+    width: 208.5px;
+    height: 36.1px;
+    object-fit: contain;
+    margin-top: -10px;
+  }
+  .registerButton{
+    font-size: 16px; 
+    font-weight: bold; color:#586b8a; margin-left: 9em;
+  }
+  .afterRecording{
+    font-size: 14px;
+    width: 40%; 
+    width: 60%; 
+    margin-top: 6em;
+    margin-left: 5em; 
+    position: absolute;
+  }
+  
+  .sayThis{
+    font-size: 14px; 
+    font-weight: bold; 
+    color:#586b8a;
+  }
+  
+  .label{
+    width: 146px;
+    height: 17px;
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  .inputStyle{
+    background-color: #3b3857;
+    border: 1px solid#4d56c7; 
+    height: 28px;
+  }
+  
+  .showOutput{
+    height: 13em; 
+    width: 25em; 
+    margin-top: 12px; 
+    background-color: #717082;
+  }
+  
+  /* .submitBut{
+    margin-left: 10em; 
+    width: 38%; 
+    margin-top: 12px;
+  } */
+  .recordBut{
+    /* margin-left: 8em;  */
+    margin-top: 1em;
+  }
+
+  #capture{
+    background-image: url("../images/background.png") !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important; 
+    background-size: 100% 100% !important;
+    height: 38%;
+}
